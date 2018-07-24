@@ -1,0 +1,164 @@
+.onscroll-ad {
+    background: #eee;
+    margin: 0;
+    padding: 0;
+    line-height: 50px;
+    font-size: 20px;
+    clear: both
+}
+
+.onscroll-overlay {
+    position: fixed;
+    background: rgba(255, 255, 255, 0.8);
+    top: 0;
+    left 0;
+    min-width: 250px;
+    min-height: 100px;
+    z-index: 999999;
+    display: none
+}
+
+.onscroll-top-banner, .onscroll-bottom-banner {
+    display: block;
+    width: 100%;
+    background: #212121;
+    min-height: 55px;
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.75);
+    color: white;
+    font-family: sans-serif
+}
+
+.onscroll-bottom-banner {
+    top: auto;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8)
+}
+
+.onscroll-top-banner .section {
+    height: 55px;
+    min-width: 80px;
+    float: left
+}
+
+.onscroll-top-banner .section.logo {
+    background-image: url("images/logo.png");
+    background-repeat: no-repeat;
+    background-position: 10px 50%;
+    width: 80px;
+    height: 55px;
+    position: absolute;
+    z-index: 9999
+}
+
+.onscroll-top-banner .section.button {
+    background-image: url("images/tell-me-more.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 110px;
+    height: 28px;
+    position: absolute;
+    left: 100px;
+    z-index: 9999
+}
+
+.onscroll-top-banner .section.details {
+    float: right
+}
+
+.onscroll-top-banner .section.content {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    line-height: 55px;
+    font-size: 25px
+}
+
+.onscroll-top-banner .section.content .half {
+    max-width: 500px;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0 auto
+}
+
+.onscroll-top-banner .section.content img {
+    vertical-align: middle;
+    margin: 10px;
+    width: auto;
+    height: auto;
+    position: static;
+    display: inline
+}
+
+.onscroll-overlay.onscroll-engagement {
+    left: auto;
+    right: 0
+}
+
+.onscroll-overlay table {
+    width: 100%;
+    border-left: 1px solid gray;
+    border-collapse: collapse;
+    font-size: 10px;
+    height: 55px
+}
+
+.onscroll-overlay table th, .onscroll-overlay table td {
+    text-align: center;
+    width: 90px;
+    padding: 2px;
+    border-right: 1px solid gray
+}
+
+.onscroll-overlay table th {
+    color: silver;
+    text-transform: uppercase;
+    font-weight: normal;
+    padding-top: 12px
+}
+
+.onscroll-overlay table td.label {
+    color: silver;
+    text-transform: uppercase;
+    font-weight: normal
+}
+
+.onscroll-overlay table td {
+    font-weight: bold
+}
+
+.onscroll-overlay table tr:last-child td:last-child {
+    padding-bottom: 10px
+}
+
+.onscroll-overlay table tr:first-child td {
+    padding-bottom: 10px;
+    padding-top: 10px
+}
+
+.onscroll-bottom-banner table tr td:last-child {
+    border-right: 0
+}
+
+.onscroll-bottom-banner table {
+    border-left: 0
+}
+
+table.onscroll-ads-list {
+    max-width: 1100px;
+    width: 80%;
+    margin: 0 auto
+}
+
+.onscroll-overlay table.onscroll-ads-list th, .onscroll-overlay table.onscroll-ads-list td {
+    width: 60px
+}
+
+.onscroll-bottom-banner table td {
+    color: white
+}
+
+.onscroll-bottom-banner table td.inactive {
+    color: gray !important
+}
