@@ -4,13 +4,21 @@
   "description": "",
   "main": "onetag.js",
   "scripts": {
-    "test": "wdio"
+    "test": "wdio",
+    "simple-server": "python -m SimpleHTTPServer 8080",
+    "selenium": "selenium-standalone start",
+    "integration-test": "start-server-and-test simple-server http://localhost:8080 test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "wdio-mocha-framework": "^0.6.2",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "start-server-and-test": "^1.7.0",
+    "wdio-mocha-framework": "^0.6.3",
+    "wdio-selenium-standalone-service": "0.0.10",
+    "wdio-spec-reporter": "^0.1.5",
     "webdriverio": "^4.13.1"
   }
 }
